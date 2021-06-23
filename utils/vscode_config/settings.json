@@ -1,6 +1,8 @@
 {
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 2,
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+  "workbench.productIconTheme": "fluent-icons",
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/vimscript/nv-vscode/init.vim",
   "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/vimscript/nv-vscode/init.vim",
   "whichkey.sortOrder": "alphabetically",
@@ -941,25 +943,25 @@
       "type": "command",
       "command": "workbench.view.extensions"
     },
-    {
-      "key": "y",
-      "name": "Sync...",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "d",
-          "name": "Download Settings",
-          "type": "command",
-          "command": "extension.downloadSettings"
-        },
-        {
-          "key": "u",
-          "name": "Upload Settings",
-          "type": "command",
-          "command": "extension.updateSettings"
-        }
-      ]
-    },
+//    {
+//      "key": "y",
+//      "name": "Sync...",
+//      "type": "bindings",
+//      "bindings": [
+//        {
+//          "key": "d",
+//          "name": "Download Settings",
+//          "type": "command",
+//          "command": "extension.downloadSettings"
+//        },
+//        {
+//          "key": "u",
+//          "name": "Upload Settings",
+//          "type": "command",
+//          "command": "extension.updateSettings"
+//        }
+//      ]
+//    }, 
     {
       "key": "z",
       "name": "Toggle zen mode",
@@ -968,48 +970,16 @@
     }
   ],
   "workbench.editor.showTabs": true,
-  "sync.gist": "939951904a077b97f8001bc35f6b5948",
-  "gitlens.hovers.currentLine.over": "line",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.pythonPath": "/home/chris/.miniconda/envs/ds/bin/python",
-  "java.semanticHighlighting.enabled": true,
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/chris/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "workbench.list.automaticKeyboardNavigation": false,
   "oneDarkPro.editorTheme": "oneDarkPro",
-  "python.languageServer": "Pylance",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "kite.showWelcomeNotificationOnStartup": false,
-  "python.terminal.activateEnvironment": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrainsMono Nerd Font, Hack, Menlo, Monaco, 'Courier New', monospace",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "terminal.external.osxExec": "iTerm.app",
-  "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": true,
-  "leetcode.workspaceFolder": "/Users/chris/Repos/leetcode",
-  "leetcode.defaultLanguage": "javascript",
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.commentDescription": false,
-  "window.zoomLevel": 2,
+  "editor.fontFamily": "'FiraCode Nerd Font', 'Fira Code', Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.snippetSuggestions": "bottom",
+  "editor.fontSize": 12,
   "window.menuBarVisibility": "toggle",
-  "python.dataScience.alwaysTrustNotebooks": true,
-  "python.condaPath": "$HOME/.miniconda/bin/conda",
-  "python.formatting.provider": "black",
-  "python.insidersChannel": "off",
-  "terminal.integrated.shell.linux": "/bin/zsh",
-  "terminal.external.linuxExec": "/usr/bin/alacritty",
-  "code-runner.executorMap": {
-    "python": "$pythonPath $fileName",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  },
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
       "textMateRules": [
@@ -1023,11 +993,9 @@
             "foreground": "#61afef"
           }
         },
-
         {
           "scope": [
             "variable.other.constant.object.js",
-
             "punctuation.section.embedded.begin.jsx",
             "punctuation.section.embedded.end.jsx"
           ],
@@ -1036,7 +1004,9 @@
           }
         },
         {
-          "scope": ["punctuation.definition.tag.jsx"],
+          "scope": [
+            "punctuation.definition.tag.jsx"
+          ],
           "settings": {
             "foreground": "#5c6370"
           }
@@ -1053,7 +1023,9 @@
           }
         },
         {
-          "scope": ["entity.other.attribute-name.jsx"],
+          "scope": [
+            "entity.other.attribute-name.jsx"
+          ],
           "settings": {
             "foreground": "#e5c07b"
           }
@@ -1073,7 +1045,9 @@
           }
         },
         {
-          "scope": ["variable.other.constant.object.js"],
+          "scope": [
+            "variable.other.constant.object.js"
+          ],
           "settings": {
             "foreground": "#e06c75"
           }
@@ -1081,7 +1055,6 @@
       ]
     }
   },
-
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "statusBar.background": "#2E2E2E",
@@ -1112,17 +1085,7 @@
       "terminal.ansiBrightYellow": "#d19a66"
     }
   },
-  "gitlens.advanced.telemetry.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
   "material-icon-theme.showWelcomeMessage": false,
-  "gitlens.codeLens.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
-  "git.autofetch": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "python.showStartPage": false,
-  "editor.snippetSuggestions": "bottom"
+  "editor.minimap.enabled": false
 }
