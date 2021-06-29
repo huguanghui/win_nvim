@@ -14,7 +14,7 @@ require('plugins/nvim-autopairs')
 require('plugins/nvim-compe')
 require('plugins/nvim-tree')
 require('plugins/telescope')
-require('plugins/treesitter')
+-- require('plugins/treesitter')
 require('plugins/which-key')
 
 require('lsp')
